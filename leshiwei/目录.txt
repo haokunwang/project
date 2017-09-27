@@ -1,0 +1,10 @@
+call me.html ---联系我们
+
+
+首页        ---     home.html
+品牌故事    ---     page2.html
+产品介绍    ---     page3.html
+最新资讯1   ---     page4.html
+最新资讯2   ---     page4-1.html
+联系我们    ---     page5.html
+招商加盟    ---     page6.html

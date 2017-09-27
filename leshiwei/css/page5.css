@@ -1,0 +1,98 @@
+.sec-1{
+    background: #ffffff;
+    width: 100%;
+    height: 795px;
+    position: relative;
+}
+.sec-1 > .bg{
+    width: 907px;
+    height: 554px;
+    background: url("../img/mnk_03.png") no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+.sec-1 > .sec-1-t{
+    display: block;
+    border: 1px solid #d5a1cd;
+    border-radius: 10px;
+    position: absolute;
+    top: 92px;
+    left: 44.5%;
+}
+.sec-1 > .sec-1-m{
+    display: block;
+    position: absolute;
+    top: 175px;
+    left: 49.1%;
+}
+
+
+
+.sec-1 > .bg > .sec-1-l{
+    margin-top: 68px;
+    margin-left: 95px;
+    float: left;
+    width: 230px;
+}
+.sec-1 > .bg > .sec-1-l > p{
+    margin-bottom: 30px;
+    text-align: center;
+    color: #828183;
+    font-size: 14px;
+}
+.sec-1 > .bg > .sec-1-l > p:nth-child(1){
+    font-size: 18px;
+    color: #333333;
+    font-weight: bolder;
+}
+.sec-1 > .bg > .sec-1-l > p:nth-child(7){
+    font-size: 16px;
+    color: #333333;
+    font-weight: bolder;
+}
+.sec-1 > .bg > .sec-1-l > img{
+    display: block;
+    margin: 0 auto;
+}
+
+
+.sec-1 > .bg > .sec-1-r{
+    float: right;
+    margin-top: 88px;
+    margin-right: 60px;
+    width: 316px;
+}
+.sec-1 > .bg > .sec-1-r > form > p{
+    color: #333333;
+    font-size: 15px;
+    margin-bottom: 11px;
+}
+.sec-1 > .bg > .sec-1-r > form > input{
+    padding: 8px 10px;
+    width: 100%;
+    height: 29px;
+    border-radius: 5px;
+    border: 1px solid #dbc8d8;
+    margin-bottom: 14px;
+}
+.sec-1 > .bg > .sec-1-r > form > textarea{
+    padding: 8px 10px;
+    width: 100%;
+    height: 192px;
+    border-radius: 5px;
+    border: 1px solid #dbc8d8;
+    margin-bottom: 14px;
+}
+.sec-1 > .bg > .sec-1-r > form > button{
+    height: 35px;
+    width: 100%;
+    background: #fbf3fe;
+    color: #c39bbe;
+    border: 1px solid #c39bbe;
+    border-radius: 5px;
+    cursor: pointer;
+}

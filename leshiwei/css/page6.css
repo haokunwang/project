@@ -1,0 +1,240 @@
+/*   join  主体部分    */
+.sec{
+    background: #ffffff;
+}
+.sec > div{
+    width: 1200px;
+}
+.sec > .sec-1{
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 40px;
+    /*width: 1000px;*/
+    /*height: 100%;*/
+    height: 451px;
+    /*overflow: auto;*/
+}
+.sec > .sec-1 > .sec-1-l{
+    float: left;
+    color: #dbaed8;
+    margin-left: 95px;
+}
+.sec > .sec-1 > .sec-1-l > img{
+    margin-bottom: 10px;
+}
+.sec > .sec-1 > .sec-1-l > .txt{
+    font-size: 30px;
+    margin-top: 25px;
+}
+.sec > .sec-1 > .sec-1-l > .txt1{
+    font-size: 15px;
+    margin-top: 37px;
+}
+.sec > .sec-1 > .sec-1-l > .txt1 > img{
+    margin-top: -10px;
+}
+.sec > .sec-1 > .sec-1-r{
+    float: left;
+    margin-left: 120px;
+}
+
+
+
+
+.sec > .sec-2{
+    margin: 0 auto;
+    margin-bottom: 28px;
+    overflow: auto;
+    /*width: 1050px;*/
+
+}
+.sec > .sec-2 > img{
+    float: left;
+    margin-left: 70px;
+}
+.sec > .sec-2 > div{
+    float: left;
+    margin-left: 158px;
+}
+.sec > .sec-2 > div > img{
+    margin-top: 57px;
+}
+.sec > .sec-2 > div > ul{
+    margin-top: 50px;
+    margin-left: 32px;
+}
+.sec > .sec-2 > div > ul > li{
+    float: left;
+    width: 70px;
+    height: 70px;
+    border: 1px solid #ebcee9;
+    color: #ebcee9;
+    text-align: center;
+    line-height: 68px;
+    font-size: 18px;
+    margin-right: 60px;
+}
+
+
+
+
+.sec > .sec-3{
+    /*width: 950px;*/
+    margin: 0 auto;
+    overflow: auto;
+    margin-bottom: 55px;
+}
+.sec > .sec-3 > .sec-3-l{
+    float: left;
+    margin-top: 107px;
+    color: #dbaed8;
+    margin-left: 120px;
+}
+.sec > .sec-3 > .sec-3-l > img{
+
+}
+.sec > .sec-3 > .sec-3-l > p:nth-child(2){
+    font-size: 35px;
+    margin-top: 30px;
+    margin-left: 13px;
+}
+.sec > .sec-3 > .sec-3-l > p:nth-child(3){
+    font-size: 25px;
+    margin-top: 23px;
+    margin-left: 13px;
+}
+.sec > .sec-3 > .sec-3-r{
+    float: left;
+    margin-left: 142px;
+}
+
+
+
+.sec > .sec-4{
+    /*width: 1127px;*/
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+.sec > .sec-4 > .bg{
+    background: url("../img/zsbg.png") no-repeat;
+    width: 410px;
+    height: 130px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 140px;
+    font-size: 35px;
+    letter-spacing:3px;
+    color: #ff1c7b;
+}
+.sec > .sec-4 > p {
+    font-size: 15px;
+    color: #333333;
+    text-indent: 18px;
+    margin-top: 50px;
+    line-height: 35px;
+}
+
+
+
+.sec > .sec-5{
+    /*width: 1025px;*/
+    margin: 0 auto;
+    height: 830px;
+}
+.sec > .sec-5 > .bg{
+    background: url("../img/zsbg.png") no-repeat;
+    width: 410px;
+    height: 130px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 140px;
+    font-size: 35px;
+    letter-spacing:3px;
+    color: #ff1c7b;
+}
+.sec > .sec-5 > div{
+    margin-top: 50px;
+}
+.sec > .sec-5 > div >img:nth-child(1){
+    float: left;
+}
+.sec > .sec-5 > div >img:nth-child(2){
+    float: right;
+ }
+
+
+
+.sec > .sec-6{
+    margin: 0 auto;
+    margin-top: 60px;
+    /*width: 1200px;*/
+}
+.sec > .sec-6 > .bg{
+    background: url("../img/zsbg.png") no-repeat;
+    width: 410px;
+    height: 130px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 140px;
+    font-size: 35px;
+    letter-spacing:3px;
+    color: #ff1c7b;
+    margin-bottom: 30px;
+}
+.sec > .sec-6 > img{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+
+
+
+.sec > .sec-7{
+    margin: 0 auto;
+    margin-top: 90px;
+    overflow: auto;
+    /*width: 1300px;*/
+}
+.sec > .sec-7 > .bg{
+    background: url("../img/zsbg.png") no-repeat;
+    width: 410px;
+    height: 130px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 140px;
+    font-size: 35px;
+    letter-spacing:3px;
+    color: #ff1c7b;
+    margin-bottom: 30px;
+}
+
+.sec > .sec-7 > form{
+    width: 500px;
+    margin: 0 auto;
+    color: #b38dca;
+    margin-top: 20px;
+}
+.sec > .sec-7 > form > p {
+    font-size: 30px;
+    margin-bottom: 40px;
+
+}
+.sec > .sec-7 > form > p > input{
+    width: 357px;
+    height: 35px;
+    border: 1px solid #dbc8d8;
+    margin-left: 20px;
+}
+.sec > .sec-7 > form > p > span{
+    float: left;
+}
+.sec > .sec-7 > form > p > textarea{
+    width: 357px;
+    height: 285px;
+    border: 1px solid #dbc8d8;
+    margin-left: 20px;
+    float: left;
+    margin-bottom: 30px;
+}

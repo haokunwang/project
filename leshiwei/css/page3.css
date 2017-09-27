@@ -1,0 +1,89 @@
+
+
+/*产品展示*/
+.sec-1 > div{
+    width: 1240px;
+    margin: 0 auto;
+}
+.sec-1 > div > .tit{
+    width: 280px;
+    margin: 50px auto;
+}
+.sec-1 > div > .tit > img{
+    width: 70px;
+}
+.sec-1 > div > .tit > div{
+    float: left;
+    text-align: right;
+    margin-right: 15px;
+}
+.sec-1 > div > .tit > div > p:nth-child(1){
+    font-size: 25px;
+}
+.sec-1 > div > .tit > div > p:nth-child(2){
+    font-size: 30px;
+    font-family: Courier New;
+    font-weight: lighter;
+    color: #999999;
+}
+
+.sec-1 > div > .sec-1-t{
+    /*margin-bottom: 40px;*/
+    width: 600px;
+    height: 40px;
+    margin: 0 auto;
+}
+.sec-1 > div > .sec-1-t > li{
+    float: left;
+    width: 115px;
+    height: 37px;
+    border-radius: 10px;
+    border: 1px solid #b38dca;
+    color: #b38dca;
+    text-align: center;
+    line-height: 35px;
+    font-size: 15px;
+    margin-left: 57px;
+    cursor: pointer;
+}
+
+.bgc_b38dca{
+    background: #b38dca !important;
+    color: #fff !important;
+}
+.sec-1 > div > .pic-list{
+    display: none;
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 1000px;
+    margin-bottom: 40px;
+}
+.sec-1 > div > div > img{
+    margin-left: 27px;
+}
+.sec-1 > div > div > img:nth-child(2){
+    margin-left: 0;
+}
+
+.sec-1 > div > .sec-1-b{
+    width: 120px;
+    height: 20px;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 20px;
+    margin-bottom: 40px;
+}
+.sec-1 > div > .sec-1-b > li{
+    width: 19px;
+    height: 19px;
+    background: #c9c9c9;
+    border-radius: 50%;
+    float: left;
+    margin-left: 15px;
+}
+.open2{
+    background: #626262 !important;
+}
+.show{
+    display: block !important;
+}

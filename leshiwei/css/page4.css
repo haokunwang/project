@@ -1,0 +1,57 @@
+/* 咨询    主体部分    */
+.sec-1{
+    margin-bottom: 40px;
+}
+.sec-1 > div > a{
+    display: block;
+    margin: 0 auto;
+    margin-top: 48px;
+    width: 1100px;
+    height: 141px;
+    cursor: pointer;
+}
+.sec-1 > div > a > div{
+    margin-left: 23px;
+}
+.sec-1 > div > a > .sec-1-l{
+    float: left;
+ }
+.sec-1 > div > a > .sec-1-l > p:nth-child(1){
+    width: 752px;
+    box-sizing: content-box;
+    padding: 10px 0 15px 0;
+    border-bottom: 1px dashed #aaaaaa;
+    font-size: 19px;
+    color: #000;
+}
+.sec-1 > div > a > .sec-1-l > p:nth-child(2){
+    width: 752px;
+    margin-top: 15px;
+    font-size: 14px;
+    text-indent:28px;
+    line-height: 25px;
+    color: #aaaaaa;
+}
+.sec-1 > div > a > .sec-1-r{
+    float: left;
+    color: #e2d5ea;
+    padding-left: 20px;
+    border-left: 1px solid #e2d5ea;
+    margin-top: 37px;
+}
+.sec-1 > div > a > .sec-1-r > p:nth-child(1){
+    font-size: 36px;
+}
+.sec-1 > div > a > .sec-1-r > p:nth-child(2){
+}
+
+
+
+
+
+.sec-1 > div > a:hover{
+    background: #b38dca;
+}
+.sec-1 > div > a:hover .sec-1-l > p{
+    color: #ffffff;
+}

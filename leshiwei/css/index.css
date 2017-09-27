@@ -1,0 +1,223 @@
+*{
+    box-sizing: border-box;
+
+}
+
+html,body{
+    max-width:100%;
+    /*min-width: 1920px;*/
+    overflow: auto;
+}
+/*     top    */
+header{
+    width: 100%;
+    background: #ba97cf;
+    height: 100px;
+    overflow: hidden;
+}
+header > div{
+    width: 1240px;
+    margin: 0 auto;
+    height: 100%;
+    background: #ba97cf;
+}
+header > div > .logo{
+    margin-left: 50px;
+    margin-top: 12px;
+    width: 206px;
+    overflow: hidden;
+    margin-right: 316px;
+    float: left;
+}
+header > div > .logo >img{
+    width: 100%;
+}
+
+header > div > nav > ul > li{
+    float: left;
+    width: 82px;
+    height: 100px;
+    text-align: center;
+    line-height: 98px;
+    margin-left: 22px;
+    overflow: hidden;
+    cursor: pointer;
+}
+header > div > nav > ul > li> a{
+    color: #fff;
+    font-size: 14px;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+header > div > nav > ul > li> a:last-child{
+    display: none;
+}
+header > div > nav > ul > li:hover{
+    border-bottom: 5px solid #9f50a9;
+}
+header > div > nav > ul > li:hover a:first-child{
+    display: none;
+}
+header > div > nav > ul > li:hover a:last-child{
+    display: inline-block;
+}
+.open{
+    border-bottom: 5px solid #9f50a9;
+}
+.open > a:first-child{
+    display: none;
+}
+.open > a:last-child{
+    display: inline-block;
+}
+
+
+/*     轮播图    */
+.car{
+    width: 100%;
+    overflow: hidden;
+}
+.owl-demo{
+    overflow: hidden;
+}
+.car img{
+    width: 100%;
+}
+.owl-item{
+    float: left;
+}
+.owl-controls{
+    text-align: center;
+}
+.owl-page{
+    display: inline-block;
+}
+.owl-page span{
+    display: block;
+    width: 12px;
+    height: 12px;
+    margin: 5px 7px;
+    filter: Alpha(Opacity=50);
+    opacity: 0.5;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    background: #869791;
+}
+.active span{
+    opacity: 1;
+}
+section > .show{
+    display: none;
+}
+
+
+
+
+    /*footer*/
+footer{
+    width: 100%;
+    height: 172px;
+    background: #b38dca;
+    color: #fff;
+    font-size: 15px;
+    /*overflow: auto;*/
+}
+footer > div{
+    width: 1241px;
+    margin: 0 auto;
+    background: #b38dca;
+    height: 100%;
+}
+footer > div > .footer-l{
+    float: left;
+    margin-top: 17px;
+}
+footer > div > .footer-l > .footer-l-1{
+    width: 138px;
+    height: 138px;
+    float: left;
+}
+footer > div > .footer-l > .footer-l-1 > img{
+    width: 100%;
+    height: 100%;
+}
+footer > div > .footer-l > .footer-l-2{
+    margin-left: 15px;
+    float: left;
+}
+footer > div > .footer-l > .footer-l-2 > .btn{
+    display: block;
+    width: 106px;
+    height: 28px;
+    border: 1px solid #fff;
+    text-align: center;
+    line-height: 26px;
+    margin-top: 31px;
+    color: #ffffff;
+}
+footer > div > .footer-l > .footer-l-2 > ul{
+    margin-top: 18px;
+    height: 17px;
+}
+footer > div > .footer-l > .footer-l-2 > ul > li{
+    height: 17px;
+    padding: 0 13px 0 13px;
+    border-right: 1px solid #fff;
+    float: left;
+}
+footer > div > .footer-l > .footer-l-2 > ul > li:first-child{
+    padding-left: 0;
+}
+footer > div > .footer-l > .footer-l-2 > ul > li:last-child{
+    border: none;
+}
+footer > div > .footer-l > .footer-l-2 > .txt{
+    font-size: 10px;
+    margin-top: 18px;
+}
+footer > div > .footer-l > .footer-l-2 > .txt > p:nth-child(1){
+    width: 145px;
+}
+footer > div > .footer-l > .footer-l-2 > .txt > p:nth-child(2){
+    width: 22px;
+}
+footer > div > .footer-l > .footer-l-2 > .txt > p:nth-child(3){
+    width: 45px;
+}
+footer > div > .footer-l > .footer-l-2 > .txt > p:nth-child(4){
+    width: 65px;
+}
+footer > div > .footer-l > .footer-l-2 > .txt > p{
+    display: inline-block;
+}
+.footer-r > .footer-l-2 > .txt > span{
+    display: inline;
+}
+footer > div > .footer-l > .footer-l-2 > .txt > p:first-letter{
+    font-size: 15px;
+}
+footer > div > .footer-l > .footer-l-2 > .txt > span{
+    font-size: 16px;
+}
+
+footer > div > .footer-r{
+    float: left;
+    margin-left: 110px;
+    margin-top: 66px;
+}
+footer > div > .footer-r > div{
+    float: left;
+}
+footer > div > .footer-r > .ele{
+    height: 40px;
+    line-height: 38px;
+    margin-top: 6px;
+}
+footer > div > .footer-r > .ele > span{
+    margin-left: 11px;
+}
+footer > div > .footer-r > .wl > img{
+    margin-left: 40px;
+}
