@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		body,ul,li{
+			padding: 0;
+			margin: 0;
+		}
+		li{
+			list-style: none;
+		}
+		.rating{
+			position: relative;
+			width: 110px;
+			height: 21px;
+			background: url(images/starky.png) repeat-x;
+			margin: 100px auto;
+		}
+		.rating_display{
+			width: 0;
+			height: 21px;
+			background: url(images/starsy.png) repeat-x;
+		}
+		.rating_mask{
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+		}
+		.rating_item{
+			float: left;
+			width: 22px;
+			height: 21px;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<div id="rating" class="rating">
+		<!--<div class="rating_display"></div>-->
+		<!--<ul class="rating_mask">-->
+			<!--<li class="rating_item"></li>-->
+			<!--<li class="rating_item"></li>-->
+			<!--<li class="rating_item"></li>-->
+			<!--<li class="rating_item"></li>-->
+			<!--<li class="rating_item"></li>-->
+		<!--</ul>-->
+	</div>
+	<script src="jquery-1.9.1.min.js"></script>
+	<script>
+
+		var rating = (function(){
+			//策略
+			var strtegies = {
+				entire:function(){
+					return 1
+				},
+				half:function(){
+					return 2
+				},
+				quarter:function(){
+					return 4
+				}
+			};
+
+			//评分
+			var Rating = function(el,options){
+				this.$el = $(el);
+				this.opts = $.extend({},Rating.Defaults,options);
+				if(!strtegies[this.opts.mode]){
+					this.opts.mode = "entire";
+				}
+				this.ratio = strtegies[this.opts.mode]();
+
+				this.opts.total *= this.ratio ;
+				this.opts.num *= this.ratio ;
+
+				this.itemWidth = 22/this.ratio;
+				this.displayWidth = this.opts.num * this.itemWidth;
+			}
+
+			Rating.Defaults = {
+				mode:"entire",
+				total:5,
+				num:2,
+				readOnly:false,
+				select:function(){},
+				chosen:function(){}
+			}
+			Rating.prototype.init = function(){
+				this.buildHTML();
+				this.setCSS();
+				if(!this.opts.readOnly){
+					this.bindEvent();
+				}
+			};
+			Rating.prototype.buildHTML = function(){
+				var html = "";
+				html += '<div class="rating_display"></div><ul class="rating_mask">'
+				for(var i = 0;i < this.opts.total;i++){
+					html += '<li class="rating_item"></li>'
+				}
+				html += "</ul>";
+
+				this.$el.html(html);
+			}
+			Rating.prototype.setCSS = function(){
+				this.$el.width(this.opts.total * this.itemWidth);
+				this.$display = this.$el.find(".rating_display");
+				this.$display.width(this.displayWidth);
+				this.$el.find(".rating_item").width(this.itemWidth)
+			}
+			Rating.prototype.bindEvent = function(){
+				var self = this;
+
+				this.$el.on("mousemove",".rating_item",function(){
+					var count = $(this).index() + 1;
+
+					self.$display.width(count * self.itemWidth);
+
+					(typeof self.opts.select === "function") && self.opts.select.call(this,count,self.opts.total)
+
+					self.$el.trigger("select",[count,self.opts.total])
+				}).on("click",".rating_item",function(){
+					var count = $(this).index() + 1;
+					self.displayWidth = count * self.itemWidth;
+
+					(typeof self.opts.chosen === "function") && self.opts.chosen.call(this,count,self.opts.total)
+
+					self.$el.trigger("chosen",[count,self.opts.total])
+				}).on("mouseout",function(){
+					self.$display.width(self.displayWidth)
+				})
+			}
+			Rating.prototype.unbindEvent = function(){//解绑定事件
+				this.$el.off();
+			}
+
+			var init = function(el,option){
+				var $el = $(el),
+					rating = $el.data("rating");
+				if(!rating){
+					$el.data("rating",(rating  = new Rating(el,typeof option === "object" && option)));
+					rating.init()
+				}
+				if(typeof option === "string") rating[option]()
+			};
+
+			//jQuery插件封装
+			$.fn.extend({
+				rating:function(option){
+					return this.each(function(){
+						init(this,option)
+					})
+				}
+			})
+
+			return {
+				init:init
+			}
+		})();
+
+		$("#rating").rating({
+			mode:"half",
+			total:6,
+			num:3,
+			chosen:function(){
+				$("#rating").rating("unbindEvent")
+			}
+		})
+
+//		rating.init("#rating",{
+//			total:6,
+//			num:3,
+//			chosen:function(){
+//				rating.init("#rating","unbindEvent")
+//			}
+//		})
+	</script>
+</body>
+</html>
