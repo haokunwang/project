@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="renderer" content="webkit">
+	<title>欢迎登录_巨合商城</title>
+	<link rel="icon" href="../img/logo.ico">
+	<link rel="stylesheet" href="../css/common.css">
+</head>
+<body>
+<!--*********************** 头部 ***********************-->
+	<div class="login_head  box_shadow_bottom">
+		<div class="login-top clearfix">
+			<div class="fl">
+				<a title="巨合商城" class="fl" style="display:inline-block;width:188px;height:50px;background:url(../img/logo.png) left center no-repeat;background-size:100% ;" href="home.html"></a>
+				<span class="welcome">欢迎登录</span>
+			</div>
+			<div class="fr">
+				<ul class="clearfix nav_logo">
+					<li class="fl"><a target="_blank" href="" class="to_ht">前往商家后台</a></li>
+					<li id="app_down" class="fl app_down">移动版商城
+                        <div class="app_code">
+							<img id="appqrcode" src="../img/tools.jpg" data-href="">
+							<p>移动版商城</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+
+	<div class="login_banner" style="background: url(../img/logo-bg.jpg) center no-repeat;">
+			<div class="main clearfix">
+			<div class="login_wrap fr">
+                <div class="login_type clearfix">
+					<span>账号密码登录</span>
+					<div class="account_icon type"></div>
+					<div class="txt sj_ts" style="display:block;">手机号登录点击此处</div>
+				</div>
+				<div class="account_login">
+					<div class="login_center">
+						 <form id="loginform1" method="post" autocomplete="off">
+							<div class="login_area">
+								<div class="error_message">欢迎回来，请输入您的账号与密码信息进行登录！</div>
+								<div class="form_row clearfix" style="margin-top:10px;">
+									<label for="loginid" class="username_label fl"></label> 
+									<input class="form_input" type="text" name="loginid" maxlength="30" tabindex="1" placeholder="请输入账号/手机号">
+							    </div>
+							    <div class="form_row clearfix">
+									<label for="password" class="password_label fl"></label> 
+							        <div class="input_block">
+	            					    <img id="pwdshow" class="eye" src="../img/eye_close.png" data_poen_src="../img/eye_open.png" data_close_src="../img/eye_close.png">  
+                                        <input class="psd_input" id="loginpwdshow" style="display: none;" type="text" maxlength="30" tabindex="2" placeholder="请输入密码">
+                                        <input class="psd_input" id="loginpwd" name="loginpwd" type="password" maxlength="30" tabindex="2" placeholder="请输入密码" style="display: inline-block;">
+	                                </div>  
+							    </div>
+							    <div class="m_login clearfix" style="">
+                                    <label><input class="fl" tabindex="3" name="freelogin" type="checkbox">本浏览器7天免登录（公共场所请勿勾选）</label>
+                                    <a href="" target="_blank" class="fr a_hover_red">忘记密码？</a>
+							    </div>
+							    <input type="submit" value="登 录" class="login_btn">
+							</div>
+					    </form>
+					</div>
+				</div>
+				<div class="cellphone_login" style="display: none;">
+					<div class="login_center">
+						<form id="loginform2" method="post" autocomplete="off">
+							<div class="login_area">
+								<div class="error_message">欢迎回来，请输入您注册时手机号进行验证登录！</div>
+								<div class="form_row clearfix" style="margin: 10px 0;">
+									<label for="numbel" class="numbel_label fl"></label> 
+									<input class="form_input" type="text" name="loginid" maxlength="30" tabindex="1" placeholder="请输入您注册时手机号">
+							    </div>
+							   <div class="clearfix">
+                                    <input class="pic_input fl" id="imgcode" name="imgcode" type="text" tabindex="2" maxlength="6" placeholder="请输入图形验证码">
+									<div class="pic_code fr"><img style="cursor:pointer; width:126px; height:48px; " title="看不清，换一张" id="tmpimgcode" src="../img/yz.jpg"></div>
+							    </div>
+							    <div class="clearfix" style="margin: 10px 0;">
+                                    <input class="pic_input fl" id="phonecode" name="phonecode" tabindex="3" maxlength="6" type="text" placeholder="请输入手机验证码">
+									<input id="btngetphonecode" class="yz_btn fr pic_hover" type="button" value="点击获取"><!--获取成功背景样式 background: #BBBBBB;-->
+							    </div>
+							    <div class="m_login clearfix" style="margin-top:10px;">
+                                    <label><input class="fl" tabindex="4" name="freelogin" type="checkbox">本浏览器7天免登录（公共场所请勿勾选）</label>
+							    </div>
+							    <input type="submit" value="登 录" class="login_btn">
+							</div>
+					    </form>
+					</div>
+				</div>
+				<div class="login_foot_shadow">
+					<div class="login_foot clearfix">
+					     <a href="javascript:;" class="loginthirds qq fl a_hover_red" data_type="qq">QQ</a>
+					     
+						 <a target="_blank" href="register.html" class="register_text fr">立即注册 »</a>
+				    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!--*********************** 底部 ***********************-->
+	<div class="login_bottom  box_shadow_top">
+		<div style="line-height:30px;">
+			<p>
+                <a href="" class="login_bottom_a" target="_blank">关于我们</a>
+                |<a href="" class="login_bottom_a" target="_blank">联系我们</a>
+                |<a href="" class="login_bottom_a" target="_blank">联系客服</a>
+			    |<a href="" class="login_bottom_a" target="_blank">合作招商</a>
+                |<a href="" class="login_bottom_a" target="_blank">商家帮助中心</a>
+			    |<a href="" class="login_bottom_a" target="_blank">投诉举报</a>
+                |<a href="" class="login_bottom_a" target="_blank">服务条款</a>
+                |<a href="" class="login_bottom_a" target="_blank">移动商城</a>
+			    |<a href="" class="login_bottom_a" target="_blank">企业官网</a>
+			    |<a href="" class="login_bottom_a" target="_blank">合作伙伴</a>
+            </p>
+            <p>
+            	<a class="login_bottom_a" rel="nofollow" href="" target="_blank">浙ICP备17024489号-1
+				</a>|<a class="login_bottom_a" rel="nofollow" href="" target="_blank">浙ICP备17024489号-1
+				</a>|<a class="login_bottom_a" rel="nofollow" href="" target="_blank">浙ICP备17024489号-1
+				</a>|<a class="login_bottom_a" rel="nofollow" href="" target="_blank">浙公网安备33010602008630号</a>
+			</p>
+            <p>Copyright © 2017-2017 杭州巨合网络有限公司（JVHEIP.COM） All Rights Reserved | 技术支持：<a href="" target="_blank">杭州巨合网络科技有限公司</a></p>
+		</div>
+	</div>
+	<script src="../js/jquery-1.8.3.min.js"></script>
+	<script src="../js/login.js"></script>
+</body>
+</html>
