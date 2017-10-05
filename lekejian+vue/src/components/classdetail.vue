@@ -71,7 +71,9 @@
                 return this.$store.state.schedule
             },
             detail:function(){
-                return this.$store.state.detail
+                var temp = (sessionStorage.name || this.$store.state.detail)
+                console.log(sessionStorage.name)
+                return temp
             }
         }
     }

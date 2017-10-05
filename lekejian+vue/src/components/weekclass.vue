@@ -69,6 +69,7 @@
         },
         methods:{
             chgclass:function(data){
+                window.sessionStorage.name = data;
                 this.$store.commit("chgclass",data)
             },
             filter:function(index){

@@ -1003,6 +1003,9 @@ textarea::-webkit-input-placeholder{
 	border-bottom: 4px solid #f66620;
 	color: #f66620;
 }
+.navclass a{
+	color: #ffffff;
+}
 .open > a{
 	color: #f66620;
 }

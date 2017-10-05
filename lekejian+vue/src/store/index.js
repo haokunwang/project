@@ -30,31 +30,31 @@ var store = new Vuex.Store({
         ],
     //课程的种类和信息
         schedule:[
-            {name:"游泳",coach:"Mike",day:"2017-9-27",time:"10:00-12:00",total:20,num:10,degree:4,introduce:"游泳是夏季运动的最佳搭档，也属于有痒运动，能收紧小腹，是减肥的最佳运动",
+            {name:"游泳",coach:"Mike",day:"2017-10-2",time:"10:00-12:00",total:20,num:10,degree:4,introduce:"游泳是夏季运动的最佳搭档，也属于有痒运动，能收紧小腹，是减肥的最佳运动",
                 evaluate:[
                     {userName:"天使的微笑",imgSrc:"touxiang-2.png",degree:4,message:"课程很不错，教练很细心，感觉很好课程很不错，教练很细心，感觉很好课程很不错，教练很细心，感觉很好"},
                     {userName:"天使的微笑",imgSrc:"touxiang-2.png",degree:4,message:"课程很不错，教练很细心，感觉很好课程很不错，教练很细心，感觉很好课程很不错，教练很细心，感觉很好"},
                 ]
             },
-            {name:"瑜伽",coach:"人鱼马甲",day:"2017-9-27",time:"10:00-12:00",total:20,num:20,degree:4,introduce:"瑜伽是夏季运动的最佳搭档，也属于有痒运动，能收紧小腹，是减肥的最佳运动",
+            {name:"瑜伽",coach:"人鱼马甲",day:"2017-10-2",time:"10:00-12:00",total:20,num:20,degree:4,introduce:"瑜伽是夏季运动的最佳搭档，也属于有痒运动，能收紧小腹，是减肥的最佳运动",
                 evaluate:[
                     {userName:"天使的微笑",imgSrc:"touxiang-2.png",degree:4,message:"课程很不错，教练很细心，感觉很好课程很不错，教练很细心，感觉很好课程很不错，教练很细心，感觉很好"},
                     {userName:"天使的微笑",imgSrc:"touxiang-2.png",degree:4,message:"课程很不错，教练很细心，感觉很好课程很不错，教练很细心，感觉很好课程很不错，教练很细心，感觉很好"},
                 ]
             },
-            {name:"街舞",coach:"人鱼马甲",day:"2017-9-25",time:"11:00-12:00",total:20,num:15,degree:5,introduce:"瑜伽是夏季运动的最佳搭档，也属于有痒运动，能收紧小腹，是减肥的最佳运动",
-                evaluate:[
-                    {userName:"天使的微笑",imgSrc:"touxiang-2.png",degree:5,message:"课程很不错，教练很细心，感觉很好课程很不错，教练很细心，感觉很好课程很不错，教练很细心，感觉很好"},
-                    {userName:"天使的微笑",imgSrc:"touxiang-2.png",degree:4,message:"课程很不错，教练很细心，感觉很好课程很不错，教练很细心，感觉很好课程很不错，教练很细心，感觉很好"},
-                ]
-            },
-            {name:"体操",coach:"人鱼马甲",day:"2017-9-28",time:"13:00-14:00",total:20,num:5,degree:3,introduce:"瑜伽是夏季运动的最佳搭档，也属于有痒运动，能收紧小腹，是减肥的最佳运动",
+            {name:"街舞",coach:"人鱼马甲",day:"2017-10-3",time:"11:00-12:00",total:20,num:15,degree:5,introduce:"瑜伽是夏季运动的最佳搭档，也属于有痒运动，能收紧小腹，是减肥的最佳运动",
                 evaluate:[
                     {userName:"天使的微笑",imgSrc:"touxiang-2.png",degree:5,message:"课程很不错，教练很细心，感觉很好课程很不错，教练很细心，感觉很好课程很不错，教练很细心，感觉很好"},
                     {userName:"天使的微笑",imgSrc:"touxiang-2.png",degree:4,message:"课程很不错，教练很细心，感觉很好课程很不错，教练很细心，感觉很好课程很不错，教练很细心，感觉很好"},
                 ]
             },
-            {name:"健身",coach:"人鱼马甲",day:"2017-9-30",time:"13:00-14:00",total:20,num:20,degree:4,introduce:"瑜伽是夏季运动的最佳搭档，也属于有痒运动，能收紧小腹，是减肥的最佳运动",
+            {name:"体操",coach:"人鱼马甲",day:"2017-10-1",time:"13:00-14:00",total:20,num:5,degree:3,introduce:"瑜伽是夏季运动的最佳搭档，也属于有痒运动，能收紧小腹，是减肥的最佳运动",
+                evaluate:[
+                    {userName:"天使的微笑",imgSrc:"touxiang-2.png",degree:5,message:"课程很不错，教练很细心，感觉很好课程很不错，教练很细心，感觉很好课程很不错，教练很细心，感觉很好"},
+                    {userName:"天使的微笑",imgSrc:"touxiang-2.png",degree:4,message:"课程很不错，教练很细心，感觉很好课程很不错，教练很细心，感觉很好课程很不错，教练很细心，感觉很好"},
+                ]
+            },
+            {name:"健身",coach:"人鱼马甲",day:"2017-10-4",time:"13:00-14:00",total:20,num:20,degree:4,introduce:"瑜伽是夏季运动的最佳搭档，也属于有痒运动，能收紧小腹，是减肥的最佳运动",
                 evaluate:[
                     {userName:"天使的微笑",imgSrc:"touxiang-2.png",degree:4,message:"课程很不错，教练很细心，感觉很好课程很不错，教练很细心，感觉很好课程很不错，教练很细心，感觉很好"},
                     {userName:"天使的微笑",imgSrc:"touxiang-2.png",degree:4,message:"课程很不错，教练很细心，感觉很好课程很不错，教练很细心，感觉很好课程很不错，教练很细心，感觉很好"},
