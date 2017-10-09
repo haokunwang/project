@@ -36,7 +36,7 @@
             }
         },
         mounted:function(){
-            
+            this.$store.commit("chgtitle","操月会员卡");
         },
         computed:{
             user:function(){

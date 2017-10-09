@@ -26,7 +26,8 @@
         methods:{
 
         },
-        mounted:function(){    
+        mounted:function(){
+            this.$store.commit("chgtitle","");
         },
         computed:{
             user:function(){

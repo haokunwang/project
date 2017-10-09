@@ -97,6 +97,8 @@
             while(this.weekday.length < 7){
                 this.weekday.push(new Date(newdate.setDate(newdate.getDate()+1)).getDate())
             }
+
+            this.$store.commit("chgtitle","一周课程");
         },
         computed:{
             schedule:function(){

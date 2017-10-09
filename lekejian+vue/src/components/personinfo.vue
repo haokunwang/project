@@ -46,6 +46,8 @@ export default {
         this.src = "static/img/" + this.user.imgSrc;
         this.usname = this.user.name;
         this.ustel = this.user.tel;
+
+        this.$store.commit("chgtitle","个人中心");
     },
     computed:{
         user:function(){

@@ -20,7 +20,7 @@ export default {
         }
     },
     mounted:function(){
-        
+        this.$store.commit("chgtitle","");
     },
     computed:{
         question:function(){

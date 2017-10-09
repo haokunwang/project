@@ -24,7 +24,9 @@
             },
 
         },
-        mounted:function(){},
+        mounted:function(){
+            this.$store.commit("chgtitle","");
+        },
         computed:{
             myindex:function(){
                 return this.$store.state.myindex;

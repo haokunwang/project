@@ -47,6 +47,8 @@
         },
         mounted:function(){
             this.src = "static/img/" + this.user.imgSrc;
+
+            this.$store.commit("chgtitle","个人中心");
         },
         computed:{
             user:function(){

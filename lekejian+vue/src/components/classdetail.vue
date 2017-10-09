@@ -62,7 +62,9 @@
                 this.$store.commit('addschedule',data);
             }
         },
-        mounted:function(){},
+        mounted:function(){
+            this.$store.commit("chgtitle","课程详情");
+        },
         // watch:{
         //     detail:function(){}
         // },

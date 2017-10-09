@@ -51,11 +51,13 @@ export default {
     mounted:function(){
         this.height = this.user.height;
         this.weight = this.user.weight;
+
+        this.$store.commit("chgtitle","健康管理");
     },
     computed:{
         user:function(){
             return this.$store.state.user
         }
-    },
+    }
 }
 </script>

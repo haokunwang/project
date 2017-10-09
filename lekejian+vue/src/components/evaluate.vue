@@ -43,7 +43,9 @@
 				this.$store.commit("chgeval",{degree:degree,message:this.msg})
 			}
 		},
-		mounted:function(){},
+		mounted:function(){
+			this.$store.commit("chgtitle","");
+		},
 		computed:{
 			schedule:function(){
 				return this.$store.state.user.schedule;

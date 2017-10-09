@@ -33,7 +33,9 @@
 				this.$store.commit("chgevalindex",index)
 			}
 		},
-		mounted:function(){},
+		mounted:function(){
+			this.$store.commit("chgindex",1)
+		},
 		computed:{
 			schedule:function(){
 				return this.$store.state.user.schedule;

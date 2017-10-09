@@ -88,10 +88,15 @@ var store = new Vuex.Store({
     //myclass课程列表的索引
         myindex: 0,
     //储存 添加评价 的课程索引
-        evalindex: 0
+        evalindex: 0,
+    //头部标题
+        title: ""
     },
     mutations:{
-
+    //改变头部标题
+        chgtitle:function(state,data){
+            state.title = data;
+        },
     //添加评价信息
         chgeval:function(state,data){
             var evalinfo = {

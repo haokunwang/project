@@ -78,6 +78,8 @@
         mounted:function(){
             var delay = new Date(this.user.endTime) - new Date();
             this.day = Math.ceil(delay/1000/3600/24);
+
+            this.$store.commit("chgtitle","操月会员卡");
         },
         watch:{
             endTime:function(){

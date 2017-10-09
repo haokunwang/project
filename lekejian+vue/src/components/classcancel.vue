@@ -26,7 +26,7 @@
 			}
 		},
 		mounted:function(){
-
+			this.$store.commit("chgindex",2)
 		},
 		computed:{
 			schedule:function(){

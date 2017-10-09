@@ -111,7 +111,9 @@ header > div > nav > ul > li:hover a:last-child{
 section > .show{
     display: none;
 }
-
+.owl-page{
+    margin-top: 10px;
+}
 
 
 
@@ -122,7 +124,6 @@ footer{
     background: #b38dca;
     color: #fff;
     font-size: 15px;
-    /*overflow: auto;*/
 }
 footer > div{
     width: 1241px;

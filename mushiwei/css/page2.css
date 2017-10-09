@@ -35,7 +35,7 @@ section > .bg > ul > li > div{
     display: none;
     width: 0;
     height: 0;
-    border: 9px dashed #fff;
+    border: 9px solid #fff;
     border-top-color: #9f50a9;
     position: absolute;
     top: 43px;

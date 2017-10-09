@@ -53,7 +53,9 @@
 				}
 			}
 		},
-		mounted:function(){},
+		mounted:function(){
+			this.$store.commit("chgindex",0)
+		},
 		computed:{
 			schedule:function(){
 				return this.$store.state.user.schedule;
